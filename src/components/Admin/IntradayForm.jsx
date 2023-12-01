@@ -49,7 +49,7 @@ const IntradayForm = () => {
       <Toaster />
       <form className="max-w-md mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
         <div className="mb-6">
-          <label htmlFor="nifty50" className="block text-gray-700 text-sm font-bold mb-2">
+          <label htmlFor="nifty50" className="block text-gray-700 text-sm font-bold mb-2 mt-2">
             Nifty50
           </label>
           <div className="grid grid-cols-2 gap-4">
@@ -99,13 +99,16 @@ const IntradayForm = () => {
               required
             />
           </div>
+          <label htmlFor="nifty50" className="block text-gray-700 text-sm font-bold mb-2 mt-2">
+            bankNifty
+          </label>
           <div className="grid grid-cols-2 gap-4">
             <input
               type="text"
               id="breakout"
               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Breakout"
-              value={formData.nifty50.breakout}
+              value={formData.bankNifty.breakout}
               onChange={(e) => handleChange('bankNifty', 'breakout', e.target.value)}
               required
             />
@@ -114,7 +117,7 @@ const IntradayForm = () => {
               id="support"
               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Support"
-              value={formData.nifty50.support}
+              value={formData.bankNifty.support}
               onChange={(e) => handleChange('bankNifty', 'support', e.target.value)}
               required
             />
@@ -123,7 +126,7 @@ const IntradayForm = () => {
               id="resistance"
               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Resistance"
-              value={formData.nifty50.resistance}
+              value={formData.bankNifty.resistance}
               onChange={(e) => handleChange('bankNifty', 'resistance', e.target.value)}
               required
             />
@@ -132,7 +135,7 @@ const IntradayForm = () => {
               id="target"
               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Target"
-              value={formData.nifty50.target}
+              value={formData.bankNifty.target}
               onChange={(e) => handleChange('bankNifty', 'target', e.target.value)}
               required
             />
@@ -141,18 +144,21 @@ const IntradayForm = () => {
               id="stoploss"
               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Stop Loss"
-              value={formData.nifty50.stoploss}
+              value={formData.bankNifty.stoploss}
               onChange={(e) => handleChange('bankNifty', 'stoploss', e.target.value)}
               required
             />
           </div>
+          <label htmlFor="nifty50" className="block text-gray-700 text-sm font-bold mb-2 mt-2">
+            FINNIFTY
+          </label>
           <div className="grid grid-cols-2 gap-4">
             <input
               type="text"
               id="breakout"
               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Breakout"
-              value={formData.nifty50.breakout}
+              value={formData.FINNIFTY.breakout}
               onChange={(e) => handleChange('FINNIFTY', 'breakout', e.target.value)}
               required
             />
@@ -161,7 +167,7 @@ const IntradayForm = () => {
               id="support"
               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Support"
-              value={formData.nifty50.support}
+              value={formData.FINNIFTY.support}
               onChange={(e) => handleChange('FINNIFTY', 'support', e.target.value)}
               required
             />
@@ -170,7 +176,7 @@ const IntradayForm = () => {
               id="resistance"
               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Resistance"
-              value={formData.nifty50.resistance}
+              value={formData.FINNIFTY.resistance}
               onChange={(e) => handleChange('FINNIFTY', 'resistance', e.target.value)}
               required
             />
@@ -179,7 +185,7 @@ const IntradayForm = () => {
               id="target"
               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Target"
-              value={formData.nifty50.target}
+              value={formData.FINNIFTY.target}
               onChange={(e) => handleChange('FINNIFTY', 'target', e.target.value)}
               required
             />
@@ -188,18 +194,21 @@ const IntradayForm = () => {
               id="stoploss"
               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Stop Loss"
-              value={formData.nifty50.stoploss}
+              value={formData.FINNIFTY.stoploss}
               onChange={(e) => handleChange('FINNIFTY', 'stoploss', e.target.value)}
               required
             />
           </div>
+          <label htmlFor="nifty50" className="block text-gray-700 text-sm font-bold mb-2 mt-2">
+            StockFuture
+          </label>
           <div className="grid grid-cols-2 gap-4">
             <input
               type="text"
               id="breakout"
               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Breakout"
-              value={formData.nifty50.breakout}
+              value={formData.StockFuture.breakout}
               onChange={(e) => handleChange('StockFuture', 'breakout', e.target.value)}
               required
             />
@@ -208,7 +217,7 @@ const IntradayForm = () => {
               id="support"
               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Support"
-              value={formData.nifty50.support}
+              value={formData.StockFuture.support}
               onChange={(e) => handleChange('StockFuture', 'support', e.target.value)}
               required
             />
@@ -217,7 +226,7 @@ const IntradayForm = () => {
               id="resistance"
               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Resistance"
-              value={formData.nifty50.resistance}
+              value={formData.StockFuture.resistance}
               onChange={(e) => handleChange('StockFuture', 'resistance', e.target.value)}
               required
             />
@@ -226,7 +235,7 @@ const IntradayForm = () => {
               id="target"
               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Target"
-              value={formData.nifty50.target}
+              value={formData.StockFuture.target}
               onChange={(e) => handleChange('StockFuture', 'target', e.target.value)}
               required
             />
@@ -235,8 +244,17 @@ const IntradayForm = () => {
               id="stoploss"
               className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Stop Loss"
-              value={formData.nifty50.stoploss}
+              value={formData.StockFuture.stoploss}
               onChange={(e) => handleChange('StockFuture', 'stoploss', e.target.value)}
+              required
+            />
+            <input
+              type="text"
+              id="stoploss"
+              className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="stock Name"
+              value={formData.StockFuture.stockName}
+              onChange={(e) => handleChange('StockFuture', 'stockName', e.target.value)}
               required
             />
           </div>
