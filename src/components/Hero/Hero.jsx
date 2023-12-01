@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HeroImg from "../../image/FinanceLeaders.png";
+import ReccommentationModel from '../Admin/ReccommentationModel'
 
 const Hero = () => {
     const [page, setPage] = useState("");
@@ -35,12 +36,12 @@ const Hero = () => {
                     </p>
                     <div className="flex justify-center">
                         <button
-                            // onClick={() => openStocksModal("Stock")}
+                            onClick={() => openStocksModal("Stock")}
                             className="inline-flex text-white bg-blue-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
                             Stock Recommendations
                         </button>
                         <button
-                            // onClick={() => openStocksModal("Intrady")}
+                            onClick={() => openStocksModal("Intrady")}
                             className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
                             Intraday Recommendations
                         </button>
@@ -54,11 +55,11 @@ const Hero = () => {
                         src={HeroImg}
                     />
                 </div>
-                {/* <ReccommentationModel
+                <ReccommentationModel
                     show={showStocksModal}
                     onClose={closeStocksModal}
                     page={page}
-                /> */}
+                />
             </div>
 
         </section>
